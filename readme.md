@@ -1,5 +1,3 @@
-Ello Mates
-
 GOOSECODE instructions and documentation:
 
 GOOSECODE is an esoteric programming language where you may only use the characters H O N K, and in that order.
@@ -37,13 +35,13 @@ HHOONNKK
 Where the 0-9 take up 0000 0000 to 0000 1001
 And A-Z take up 0000 1010 to 0001 0100
 And 0001 0101 is a space
-And 0001 0110
-to 1111 1111 are all '.'
+And 0001 0110 is a line break
+And 0001 0111 to 1111 1111 are all '.'
 
 
 ## Table of GOOSECODE commands
 	COMMAND | CODE    | EXPECTED NUMBER OF PARAMETERS                                 | MEANING
-	________________________________________________________________________________________________________________________________________
+	________|_________|_______________________________________________________________|_____________________________________________________
 	HONK    | 0000    | 0  			                                          | IGNORE REST OF LINE(comment)
 	HONKK   | 0001    | 3: [address], and [number]                                    | SET ADDRESS [address] to [number]
 	HONNK	| 0010	  | 5: [number], [address1], and [address2]                       | OPERATOR(address to address) see further down
@@ -71,15 +69,93 @@ Next we will need a command to print out the text to a console.
 ## GOOSECODE hello world program
 	$GOOSECODE
 	HOONNK
+		HONKK
+		HONKK
+
+		HONK 
+		HHOONNK
+
+		HONKK
+		HOONKK
+
+		HONKK
+		HOONKK
+	HOONNK 
+		HONKK
+		HHONK
+
+		HONNK 
+		HOONKK
+
+		HONNK
 		HONK
-		HHHONNK
+
+		HONKK
+		HHONK
+	HOONNK
+		
+		HONKK
+		HOONKK
+		
 		HONK
-		HHONNK
-		HONK
-		HHONNK
-		HONK
-		HHONNK
+		HHOONKK
+		
+		HONNK
+		HOONKK
+		
+		HONNK
+		HOONKK
+		
+		HONNK
+		HOONNK
 	HHOONNKK
 	ok it looks more ridiculous than i thought
+
+## GOOSECODE text code table
+
+	LETTER  | GOOSECODE
+	________|_________
+	0	|HONK HONK
+	1	|HONK HONKK
+	2	|HONK HONNK
+	3	|HONK HONNKK
+	4	|HONK HOONK
+	5	|HONK HOONKK
+	6	|HONK HOONNK
+	7	|HONK HOONNKK
+	8	|HONK HHONK
+	9	|HONK HHONKK
+	a	|HONK HHONNK
+	b	|HONK HHONNKK
+	c	|HONK HHOONK
+	d	|HONK HHOONKK
+	e	|HONK HHOONNK
+	f	|HONK HHOONNKK
+	g	|HONKK HONK
+	h	|HONKK HONKK
+	i	|HONKK HONNK
+	j	|HONKK HONNKK
+	k	|HONKK HOONK
+	l	|HONKK HOONKK
+	m	|HONKK HOONNK
+	n	|HONKK HOONNKK
+	o	|HONKK HHONK
+	p	|HONKK HHONKK
+	q	|HONKK HHONNK
+	r	|HONKK HHONNKK
+	s	|HONKK HHOONK
+	t	|HONKK HHOONKK
+	u	|HONKK HHOONNK
+	v	|HONKK HHOONNKK
+	w	|HONNK HONK
+	x	|HONNK HONKK
+	y	|HONNK HONNK
+	z	|HONNK HONNKK 
+	        |HONNK HOONK
+	.       |HONNK HOONKK
+	\n	|HONNK HOONNK
+
+
+
 
 
