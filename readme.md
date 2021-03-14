@@ -1,3 +1,1 @@
 Ello
-
-{{ ACCOUNT_AGE }}
