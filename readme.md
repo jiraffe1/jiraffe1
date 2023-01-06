@@ -4,4 +4,4 @@
 
 ## Languages:
 
-
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jiraffe1&theme=tokyonight)
